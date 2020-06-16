@@ -81,7 +81,7 @@ export default class Album extends Vue {
   private duration = 0;
   private paused = true;
   private audio!: HTMLAudioElement;
-  private soundValue = 50;
+  private soundValue = 20;
   private options = {
     railStyle: {
       backgroundColor: "#fff",
@@ -95,6 +95,7 @@ export default class Album extends Vue {
 
   mounted() {
     this.audio = new Audio(this.song);
+    this.audio.volume = this.soundValue / 100;
     this.audio.addEventListener("loadeddata", () => {
       this.duration = this.audio.duration;
     });
@@ -108,6 +109,7 @@ export default class Album extends Vue {
     this.audio.pause();
     this.audio = new Audio(this.song);
     this.audio.currentTime = 0;
+    this.audio.volume = this.soundValue / 100;
     this.currentTime = 0;
     if (!this.paused) {
       this.audio.play();
