@@ -1,24 +1,4 @@
-# week3-mp3player-vue-typescript
+### f2e第三關 - mp3 player
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [f2e page](https://challenge.thef2e.com/news/14)
+- [ui](https://xd.adobe.com/spec/6536822d-82e3-472b-56f5-105d37b69eba-1307/)
